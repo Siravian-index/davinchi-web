@@ -3,4 +3,7 @@ const app = new Hono<{ Bindings: Env }>();
 
 app.get("/api/", (c) => c.json({ name: "Cloudflare" }));
 
+app.get("/api/hello", (c) => c.json({ message: "Hello, World!" }));
+
+
 export default app;
