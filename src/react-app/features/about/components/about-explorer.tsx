@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { cn } from "@/lib/utils";
 import motoImg from "@/assets/1_IMG_0416.JPG.jpeg";
 
 const INTERESTS = [
@@ -29,10 +30,10 @@ export const AboutExplorer = () => {
               {INTERESTS.map((item) => (
                 <div key={item.labelKey} className="flex items-center gap-4 group">
                   <span
-                    className={`h-px ${item.colorVar} transition-all duration-500 ease-out`}
-                    style={{ width: "3rem" }}
-                    onMouseEnter={(e) => (e.currentTarget.style.width = "5rem")}
-                    onMouseLeave={(e) => (e.currentTarget.style.width = "3rem")}
+                    className={cn(
+                      "h-px w-12 transition-all duration-500 ease-out group-hover:w-20",
+                      item.colorVar
+                    )}
                   />
                   <span className="font-label uppercase tracking-widest text-xs text-on-surface-variant group-hover:text-on-surface transition-colors duration-300">
                     {t(item.labelKey)}
@@ -65,8 +66,8 @@ export const AboutExplorer = () => {
               <div className="h-1/3 bg-[#C8102E]/50" />
             </div>
 
-            {/* Border frame */}
-            <div className="absolute inset-0 border-16 border-background pointer-events-none rounded-xl" />
+            {/* Frame overlay using outline to avoid layout interference */}
+            <div className="absolute inset-0 outline-8 outline-background pointer-events-none rounded-xl" />
           </div>
 
         </div>

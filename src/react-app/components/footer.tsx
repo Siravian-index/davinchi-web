@@ -31,7 +31,7 @@ export const Footer = () => {
         <div className="flex gap-12">
           <div className="flex flex-col gap-3">
             <span className="font-label text-[10px] uppercase text-on-surface-variant tracking-widest mb-1">
-              Social
+              {t("contact.social")}
             </span>
             {SOCIAL_LINKS.map((link) => (
               <a

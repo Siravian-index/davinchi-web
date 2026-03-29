@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { cn } from "@/lib/utils";
 
 const MODULES = [
   {
@@ -58,11 +59,11 @@ export const AboutProfessional = () => {
                 className="group bg-surface-container-low border border-white/10 p-8 rounded-xl inner-glow transition-all duration-300 ease-out hover:border-white/20"
               >
                 <div className="flex justify-between items-start mb-6">
-                  <span className={`material-symbols-outlined text-4xl ${mod.iconColor}`}>
+                  <span className={cn("material-symbols-outlined text-4xl", mod.iconColor)}>
                     {mod.icon}
                   </span>
                   <span className="font-label text-[10px] text-on-surface-variant/60 uppercase">
-                    Module {mod.number}
+                    {t("professional.module")} {mod.number}
                   </span>
                 </div>
                 <h3 className="font-headline text-2xl font-bold text-on-surface mb-4">

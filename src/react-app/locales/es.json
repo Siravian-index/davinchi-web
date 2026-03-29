@@ -1,9 +1,5 @@
 {
-  "common": {
-    "name": "David Peña"
-  },
   "nav": {
-    "projects": "Proyectos",
     "professional": "Experiencia",
     "about": "Sobre mí",
     "contact": "Contacto"
@@ -13,15 +9,14 @@
       "line1": "Construyendo sistemas,",
       "line2": "explorando rutas."
     },
+    "status": "System Status: Optimal",
     "subheadline": "Desarrollador Fullstack con casi 4 años de experiencia en React y TypeScript, enfocado en IA, automatización y explorando Go.",
-    "availability": "Disponible para proyectos",
-    "cta": "Ver proyectos",
-    "contact": "Contacto"
+    "availability": "Disponible para proyectos"
   },
   "professional": {
     "title": "Trayectoria Profesional",
     "subtitle": "Motor Digital",
-    "experience": "Años de experiencia",
+    "module": "Módulo",
     "frontend": {
       "title": "Frontend Expert",
       "description": "Especializado en React y TypeScript. Resolución de bugs complejos y optimización de rendimiento mediante peticiones asíncronas en paralelo."
@@ -35,47 +30,27 @@
       "description": "Actualmente profundizando en Go (Golang), atraído por su eficiencia y diseño para sistemas de alto rendimiento."
     },
     "softSkills": {
-      "title": "Forma de Trabajar",
-      "teamwork": "Trabajo en equipo",
-      "mentoring": "Mentoría",
-      "learning": "Aprendizaje rápido",
-      "adaptability": "Adaptabilidad"
+      "title": "Forma de Trabajar"
     }
   },
   "personal": {
     "title": "Más Allá del Código",
-    "subtitle": "El Respiro Mecánico",
     "description": "Fuera de las pantallas, mi vida se mueve sobre dos ruedas. A finales de 2024 adquirí una Classic 350 que se convirtió en mi compañera de aventuras.",
     "stats": {
-      "km": "km recorridos",
-      "colombia": "por Colombia"
+      "km": "km recorridos"
     },
     "resilience": {
-      "title": "Resiliencia y Resolución",
-      "description": "Miles de kilómetros me han enseñado a adaptarme a los imprevistos y mantener la calma frente a los retos del camino."
+      "title": "Resiliencia y Resolución"
     },
     "mechanical": {
-      "title": "Curiosidad Mecánica",
-      "description": "Trabajar con las manos es mi forma de desconectar. Un contraste fascinante con el mundo digital que me rodea cada día."
+      "title": "Curiosidad Mecánica"
     },
     "human": {
-      "title": "Conexión Humana",
-      "description": "Recorrer mi país me ha recordado que siempre hay una historia que compartir y alguien dispuesto a ayudar."
+      "title": "Conexión Humana"
     }
-  },
-  "projects": {
-    "title": "Proyectos",
-    "subtitle": "Lo que he construido"
   },
   "contact": {
     "title": "Contacto",
-    "subtitle": "¿Hablamos?",
-    "github": "GitHub",
-    "linkedin": "LinkedIn",
-    "email": "Correo"
-  },
-  "language": {
-    "switch": "English",
-    "current": "Español"
+    "social": "Social"
   }
 }

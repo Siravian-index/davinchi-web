@@ -1,3 +1,4 @@
+import { type ComponentType, type CSSProperties } from "react";
 import {
   SiReact,
   SiNodedotjs,
@@ -10,7 +11,7 @@ import { cn } from "@/lib/utils";
 
 interface TechItem {
   label: string;
-  icon: React.ComponentType<{ size?: number; className?: string }>;
+  icon: ComponentType<{ size?: number; className?: string }>;
   brandColor: string;
 }
 
@@ -42,11 +43,7 @@ export const TechStack = ({
           <div
             key={tech.label}
             className="group flex items-center gap-2 px-3 py-2 bg-surface-container-highest/50 border border-outline-variant/10 rounded-lg transition-all duration-300 ease-out hover:border-outline-variant/40"
-            style={
-              {
-                "--brand-color": tech.brandColor,
-              } as React.CSSProperties
-            }
+            style={{ "--brand-color": tech.brandColor } as CSSProperties}
           >
             {showIcons && (
               <Icon

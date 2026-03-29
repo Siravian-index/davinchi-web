@@ -26,7 +26,7 @@ export const AboutHero = () => {
         <div className="inline-flex items-center gap-3 px-3 py-1 bg-surface-container-highest/40 border border-outline-variant/20 rounded-full mb-8">
           <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
           <span className="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant">
-            System Status: Optimal
+            {t("hero.status")}
           </span>
         </div>
 
