@@ -4,7 +4,7 @@ export const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-surface-container-lowest py-16 border-t border-white/5">
+    <footer id="contact" className="bg-surface-container-lowest py-16 border-t border-white/5">
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex flex-col gap-1">
           <span className="font-headline font-bold text-on-surface tracking-widest uppercase">
