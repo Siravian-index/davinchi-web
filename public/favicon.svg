@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="8" fill="#080e1a"/>
+
+  <!-- Spark plug cap -->
+  <rect x="14" y="2" width="4" height="2.5" rx="1" fill="#00D4FF" opacity="0.75"/>
+
+  <!-- Cylinder head cooling fins (4 fins, get slightly narrower top to bottom) -->
+  <rect x="8.5" y="5"   width="15" height="2.5" rx="1" fill="#00D4FF"/>
+  <rect x="9"   y="8.5" width="14" height="2"   rx="1" fill="#00D4FF" opacity="0.9"/>
+  <rect x="9.5" y="11"  width="13" height="2"   rx="1" fill="#00D4FF" opacity="0.8"/>
+
+  <!-- Cylinder barrel -->
+  <rect x="10.5" y="14" width="11" height="5" rx="0.5" fill="#00D4FF" opacity="0.7"/>
+
+  <!-- Crankcase (rounded base, wider) -->
+  <path d="M7 19h18v4.5C25 27.1 20.97 30 16 30s-9-2.9-9-6.5V19z" fill="#00D4FF" opacity="0.5"/>
+
+  <!-- Crankcase top highlight line -->
+  <line x1="7" y1="19" x2="25" y2="19" stroke="#00D4FF" stroke-width="0.75" opacity="0.8"/>
+</svg>
+
