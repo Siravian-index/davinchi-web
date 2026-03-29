@@ -1,0 +1,71 @@
+{
+  "common": {
+    "name": "David Peña"
+  },
+  "hero": {
+    "headline": "Building systems, exploring routes.",
+    "subheadline": "Fullstack Developer with nearly 4 years of experience in React and TypeScript, focused on AI, automation, and now diving into Go.",
+    "cta": "View projects",
+    "contact": "Contact"
+  },
+  "professional": {
+    "title": "Professional Journey",
+    "subtitle": "The Digital Engine",
+    "experience": "Years of experience",
+    "frontend": {
+      "title": "Frontend Expert",
+      "description": "Specialized in React and TypeScript. Complex bug resolution and performance optimization through parallel async requests."
+    },
+    "automation": {
+      "title": "Automation & AI",
+      "description": "Building automation scripts and integrating AI solutions into professional workflows."
+    },
+    "learning": {
+      "title": "Constantly Evolving",
+      "description": "Currently deep-diving into Go (Golang), drawn to its efficiency and design for high-performance systems."
+    },
+    "softSkills": {
+      "title": "How I Work",
+      "teamwork": "Teamwork",
+      "mentoring": "Mentoring",
+      "learning": "Fast learner",
+      "adaptability": "Adaptability"
+    }
+  },
+  "personal": {
+    "title": "Beyond the Code",
+    "subtitle": "The Mechanical Breath",
+    "description": "Away from screens, my life runs on two wheels. At the end of 2024 I got a Classic 350 that became my adventure companion.",
+    "stats": {
+      "km": "km traveled",
+      "colombia": "across Colombia"
+    },
+    "resilience": {
+      "title": "Resilience & Problem Solving",
+      "description": "Thousands of kilometers have taught me to adapt to the unexpected and stay calm when facing challenges on the road."
+    },
+    "mechanical": {
+      "title": "Mechanical Curiosity",
+      "description": "Working with my hands is my way to disconnect. A fascinating contrast with the digital world that surrounds me every day."
+    },
+    "human": {
+      "title": "Human Connection",
+      "description": "Traveling through my country has reminded me that there's always a story to share and someone willing to help."
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "What I've built"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's talk?",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  },
+  "language": {
+    "switch": "Español",
+    "current": "English"
+  }
+}
