@@ -1,72 +1,88 @@
 @import "tailwindcss";
 
+/* ─── Map CSS vars → Tailwind color tokens ─── */
+@theme inline {
+  --color-background:    var(--background);
+  --color-foreground:    var(--foreground);
+  --color-primary:       var(--primary);
+  --color-primary-fg:    var(--primary-fg);
+  --color-secondary:     var(--secondary);
+  --color-secondary-fg:  var(--secondary-fg);
+  --color-muted:         var(--muted);
+  --color-muted-fg:      var(--muted-fg);
+  --color-accent:        var(--accent);
+  --color-accent-fg:     var(--accent-fg);
+  --color-border:        var(--border);
+  --color-card:          var(--card);
+  --color-card-fg:       var(--card-fg);
+}
+
+/* ─── Theme: default (dark professional) ─── */
+.theme-default {
+  --background:   #0d0d14;
+  --foreground:   #e8e8f0;
+  --primary:      #6366f1;
+  --primary-fg:   #ffffff;
+  --secondary:    #1e1e2e;
+  --secondary-fg: #a0a0b8;
+  --muted:        #16162a;
+  --muted-fg:     #5c5c78;
+  --accent:       #818cf8;
+  --accent-fg:    #0d0d14;
+  --border:       #2a2a3e;
+  --card:         #13131f;
+  --card-fg:      #e8e8f0;
+}
+
+/* ─── Theme: moto (earth, amber, Colombia roads) ─── */
+.theme-moto {
+  --background:   #120e07;
+  --foreground:   #f0e8d8;
+  --primary:      #d97706;
+  --primary-fg:   #120e07;
+  --secondary:    #231808;
+  --secondary-fg: #c4a97c;
+  --muted:        #1c1409;
+  --muted-fg:     #7a6040;
+  --accent:       #f59e0b;
+  --accent-fg:    #120e07;
+  --border:       #3a2810;
+  --card:         #1a1208;
+  --card-fg:      #f0e8d8;
+}
+
+/* ─── Theme: cyber (neon, dark, Go/AI vibes) ─── */
+.theme-cyber {
+  --background:   #03071a;
+  --foreground:   #e0eaff;
+  --primary:      #00ff88;
+  --primary-fg:   #03071a;
+  --secondary:    #080f28;
+  --secondary-fg: #4a6a9a;
+  --muted:        #050d20;
+  --muted-fg:     #2a4060;
+  --accent:       #00c8ff;
+  --accent-fg:    #03071a;
+  --border:       #0f2040;
+  --card:         #060d22;
+  --card-fg:      #e0eaff;
+}
+
+/* ─── Base ─── */
 :root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
-	font-weight: 400;
-
-	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
-	background-color: #242424;
-
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-a {
-	font-weight: 500;
-	color: #646cff;
-	text-decoration: inherit;
-}
-a:hover {
-	color: #535bf2;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-	margin: 0;
-	min-width: 320px;
-	min-height: 100vh;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
 #root {
-	width: 100%;
-}
-
-h1 {
-	font-size: 3.2em;
-	line-height: 1.1;
-}
-
-button {
-	border-radius: 8px;
-	border: 1px solid transparent;
-	padding: 0.6em 1.2em;
-	font-size: 1em;
-	font-weight: 500;
-	font-family: inherit;
-	background-color: #1a1a1a;
-	cursor: pointer;
-	transition: border-color 0.25s;
-}
-button:hover {
-	border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-	outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-	:root {
-		color: #213547;
-		background-color: #ffffff;
-	}
-	a:hover {
-		color: #747bff;
-	}
-	button {
-		background-color: #f9f9f9;
-	}
+  width: 100%;
 }

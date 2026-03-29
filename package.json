@@ -21,7 +21,8 @@
 		"react-dom": "19.2.1",
 		"react-i18next": "^17.0.1",
 		"tailwind-merge": "^3.5.0",
-		"tailwindcss": "^4.2.2"
+		"tailwindcss": "^4.2.2",
+		"zustand": "^5.0.12"
 	},
 	"devDependencies": {
 		"@cloudflare/vite-plugin": "1.15.3",
