@@ -2,8 +2,17 @@
   "common": {
     "name": "David Peña"
   },
+  "nav": {
+    "projects": "Proyectos",
+    "professional": "Experiencia",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
   "hero": {
-    "headline": "Construyendo sistemas, explorando rutas.",
+    "headline": {
+      "line1": "Construyendo sistemas,",
+      "line2": "explorando rutas."
+    },
     "subheadline": "Desarrollador Fullstack con casi 4 años de experiencia en React y TypeScript, enfocado en IA, automatización y explorando Go.",
     "cta": "Ver proyectos",
     "contact": "Contacto"

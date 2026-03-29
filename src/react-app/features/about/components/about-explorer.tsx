@@ -1,62 +1,74 @@
 import { useTranslation } from "react-i18next";
-import type { PersonalCard, PersonalStat } from "../types";
+import motoImg from "@/assets/1_IMG_0416.JPG.jpeg";
 
-const STATS: PersonalStat[] = [
-  { value: "26,000+", labelKey: "personal.stats.km" },
-  { value: "🇨🇴",     labelKey: "personal.stats.colombia" },
-];
-
-const CARDS: PersonalCard[] = [
-  { key: "resilience", icon: "🛣",  titleKey: "personal.resilience.title", descKey: "personal.resilience.description" },
-  { key: "mechanical", icon: "🔧", titleKey: "personal.mechanical.title",  descKey: "personal.mechanical.description" },
-  { key: "human",      icon: "🤝", titleKey: "personal.human.title",       descKey: "personal.human.description" },
+const INTERESTS = [
+  { labelKey: "personal.resilience.title", colorVar: "bg-primary" },
+  { labelKey: "personal.mechanical.title",  colorVar: "bg-tertiary" },
+  { labelKey: "personal.human.title",       colorVar: "bg-secondary" },
 ];
 
 export const AboutExplorer = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="py-24 px-6 bg-secondary">
-      <div className="max-w-5xl mx-auto">
-        {/* Header */}
-        <div className="mb-16">
-          <p className="text-primary text-sm font-mono tracking-widest uppercase mb-2">
-            {t("personal.subtitle")}
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            {t("personal.title")}
-          </h2>
-          <p className="text-muted-fg mt-4 max-w-xl leading-relaxed">
-            {t("personal.description")}
-          </p>
-        </div>
+    <section id="about" className="py-32 bg-background relative overflow-hidden">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-        {/* Stats row */}
-        <div className="flex gap-8 mb-12">
-          {STATS.map((stat) => (
-            <div key={stat.labelKey} className="flex flex-col gap-1">
-              <span className="text-3xl font-bold text-primary">{stat.value}</span>
-              <span className="text-muted-fg text-sm">{t(stat.labelKey)}</span>
-            </div>
-          ))}
-        </div>
+          {/* Text column */}
+          <div className="order-2 lg:order-1">
+            <h2 className="font-headline text-4xl lg:text-6xl font-bold text-on-surface mb-8">
+              {t("personal.title")}
+            </h2>
+            <p className="text-on-surface-variant text-lg leading-relaxed mb-8 max-w-lg">
+              {t("personal.description")}
+            </p>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {CARDS.map((card) => (
-            <div
-              key={card.key}
-              className="bg-card border border-border rounded-xl p-6 hover:border-accent transition-colors group"
-            >
-              <span className="text-3xl mb-4 block">{card.icon}</span>
-              <h3 className="text-foreground font-semibold mb-2 group-hover:text-accent transition-colors">
-                {t(card.titleKey)}
-              </h3>
-              <p className="text-muted-fg text-sm leading-relaxed">
-                {t(card.descKey)}
-              </p>
+            {/* Interest lines */}
+            <div className="space-y-4">
+              {INTERESTS.map((item) => (
+                <div key={item.labelKey} className="flex items-center gap-4 group">
+                  <span
+                    className={`h-px ${item.colorVar} transition-all duration-500 ease-out`}
+                    style={{ width: "3rem" }}
+                    onMouseEnter={(e) => (e.currentTarget.style.width = "5rem")}
+                    onMouseLeave={(e) => (e.currentTarget.style.width = "3rem")}
+                  />
+                  <span className="font-label uppercase tracking-widest text-xs text-on-surface-variant group-hover:text-on-surface transition-colors duration-300">
+                    {t(item.labelKey)}
+                  </span>
+                </div>
+              ))}
             </div>
-          ))}
+
+            {/* Stat */}
+            <div className="mt-10 flex items-baseline gap-3">
+              <span className="font-headline text-5xl font-bold text-primary">26,000+</span>
+              <span className="text-on-surface-variant text-sm font-label uppercase tracking-widest">
+                {t("personal.stats.km")}
+              </span>
+            </div>
+          </div>
+
+          {/* Motorcycle image column */}
+          <div className="order-1 lg:order-2 relative group motorcycle-hover overflow-hidden rounded-xl">
+            <img
+              src={motoImg}
+              alt="Classic 350 — Colombia"
+              className="w-full h-130 object-cover grayscale transition-all duration-700 ease-out brightness-60 group-hover:brightness-50"
+            />
+
+            {/* Colombia flag color overlay */}
+            <div className="absolute inset-0 opacity-0 color-overlay transition-opacity duration-700 pointer-events-none mix-blend-color overflow-hidden">
+              <div className="h-1/3 bg-[#FFCD00]/50" />
+              <div className="h-1/3 bg-[#003087]/50" />
+              <div className="h-1/3 bg-[#C8102E]/50" />
+            </div>
+
+            {/* Border frame */}
+            <div className="absolute inset-0 border-16 border-background pointer-events-none rounded-xl" />
+          </div>
+
         </div>
       </div>
     </section>

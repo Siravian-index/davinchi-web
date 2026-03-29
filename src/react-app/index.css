@@ -1,76 +1,108 @@
 @import "tailwindcss";
 
-/* ─── Map CSS vars → Tailwind color tokens ─── */
+/* ─── Map CSS vars → Tailwind tokens ─── */
 @theme inline {
-  --color-background:    var(--background);
-  --color-foreground:    var(--foreground);
-  --color-primary:       var(--primary);
-  --color-primary-fg:    var(--primary-fg);
-  --color-secondary:     var(--secondary);
-  --color-secondary-fg:  var(--secondary-fg);
-  --color-muted:         var(--muted);
-  --color-muted-fg:      var(--muted-fg);
-  --color-accent:        var(--accent);
-  --color-accent-fg:     var(--accent-fg);
-  --color-border:        var(--border);
-  --color-card:          var(--card);
-  --color-card-fg:       var(--card-fg);
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body:     "Inter", sans-serif;
+  --font-label:    "Space Grotesk", sans-serif;
+
+  --color-background:              var(--background);
+  --color-surface:                 var(--surface);
+  --color-surface-dim:             var(--surface-dim);
+  --color-surface-container-lowest:  var(--surface-container-lowest);
+  --color-surface-container-low:   var(--surface-container-low);
+  --color-surface-container:       var(--surface-container);
+  --color-surface-container-high:  var(--surface-container-high);
+  --color-surface-container-highest: var(--surface-container-highest);
+  --color-surface-bright:          var(--surface-bright);
+  --color-on-surface:              var(--on-surface);
+  --color-on-surface-variant:      var(--on-surface-variant);
+  --color-primary:                 var(--primary);
+  --color-primary-container:       var(--primary-container);
+  --color-on-primary:              var(--on-primary);
+  --color-on-primary-fixed:        var(--on-primary-fixed);
+  --color-secondary:               var(--secondary);
+  --color-secondary-container:     var(--secondary-container);
+  --color-tertiary:                var(--tertiary);
+  --color-outline:                 var(--outline);
+  --color-outline-variant:         var(--outline-variant);
 }
 
-/* ─── Theme: default (dark professional) ─── */
-.theme-default {
-  --background:   #0d0d14;
-  --foreground:   #e8e8f0;
-  --primary:      #6366f1;
-  --primary-fg:   #ffffff;
-  --secondary:    #1e1e2e;
-  --secondary-fg: #a0a0b8;
-  --muted:        #16162a;
-  --muted-fg:     #5c5c78;
-  --accent:       #818cf8;
-  --accent-fg:    #0d0d14;
-  --border:       #2a2a3e;
-  --card:         #13131f;
-  --card-fg:      #e8e8f0;
+/* ─── Theme: deep-ocean (default) ─── */
+.theme-deep-ocean {
+  --background:                 #050505;
+  --surface:                    #131313;
+  --surface-dim:                #131313;
+  --surface-container-lowest:   #0e0e0e;
+  --surface-container-low:      #1c1b1b;
+  --surface-container:          #201f1f;
+  --surface-container-high:     #2a2a2a;
+  --surface-container-highest:  #353534;
+  --surface-bright:             #3a3939;
+  --on-surface:                 #e5e2e1;
+  --on-surface-variant:         #bac9cc;
+  --primary:                    #00D4FF;
+  --primary-container:          #00D4FF;
+  --on-primary:                 #00363d;
+  --on-primary-fixed:           #001f24;
+  --secondary:                  #2DD4BF;
+  --secondary-container:        #0b5345;
+  --tertiary:                   #ffe8e2;
+  --outline:                    #849396;
+  --outline-variant:            #3b494c;
 }
 
-/* ─── Theme: moto (earth, amber, Colombia roads) ─── */
-.theme-moto {
-  --background:   #120e07;
-  --foreground:   #f0e8d8;
-  --primary:      #d97706;
-  --primary-fg:   #120e07;
-  --secondary:    #231808;
-  --secondary-fg: #c4a97c;
-  --muted:        #1c1409;
-  --muted-fg:     #7a6040;
-  --accent:       #f59e0b;
-  --accent-fg:    #120e07;
-  --border:       #3a2810;
-  --card:         #1a1208;
-  --card-fg:      #f0e8d8;
+/* ─── Theme: forest-fire ─── */
+.theme-forest-fire {
+  --background:                 #0a0500;
+  --surface:                    #150c00;
+  --surface-dim:                #110900;
+  --surface-container-lowest:   #0d0600;
+  --surface-container-low:      #1e1200;
+  --surface-container:          #261700;
+  --surface-container-high:     #322000;
+  --surface-container-highest:  #3e2a00;
+  --surface-bright:             #4a3300;
+  --on-surface:                 #f0e0cc;
+  --on-surface-variant:         #d4b896;
+  --primary:                    #ff6b1a;
+  --primary-container:          #ff6b1a;
+  --on-primary:                 #3d1500;
+  --on-primary-fixed:           #260d00;
+  --secondary:                  #ffb74d;
+  --secondary-container:        #5c3200;
+  --tertiary:                   #ffb4ab;
+  --outline:                    #9c7a5a;
+  --outline-variant:            #4c3018;
 }
 
-/* ─── Theme: cyber (neon, dark, Go/AI vibes) ─── */
-.theme-cyber {
-  --background:   #03071a;
-  --foreground:   #e0eaff;
-  --primary:      #00ff88;
-  --primary-fg:   #03071a;
-  --secondary:    #080f28;
-  --secondary-fg: #4a6a9a;
-  --muted:        #050d20;
-  --muted-fg:     #2a4060;
-  --accent:       #00c8ff;
-  --accent-fg:    #03071a;
-  --border:       #0f2040;
-  --card:         #060d22;
-  --card-fg:      #e0eaff;
+/* ─── Theme: sunset ─── */
+.theme-sunset {
+  --background:                 #09050a;
+  --surface:                    #130d15;
+  --surface-dim:                #100b11;
+  --surface-container-lowest:   #0e0810;
+  --surface-container-low:      #1c1520;
+  --surface-container:          #221a27;
+  --surface-container-high:     #2e2436;
+  --surface-container-highest:  #3a2e44;
+  --surface-bright:             #453850;
+  --on-surface:                 #ecdff5;
+  --on-surface-variant:         #cbb8d8;
+  --primary:                    #e040fb;
+  --primary-container:          #e040fb;
+  --on-primary:                 #3a0047;
+  --on-primary-fixed:           #25002e;
+  --secondary:                  #f48fb1;
+  --secondary-container:        #6a1e3a;
+  --tertiary:                   #ffcc80;
+  --outline:                    #9a7aaa;
+  --outline-variant:            #4a3258;
 }
 
 /* ─── Base ─── */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -86,3 +118,31 @@ body {
 #root {
   width: 100%;
 }
+
+/* ─── Material Symbols utility ─── */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.material-symbols-filled {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* ─── Particle mesh background ─── */
+.particle-mesh {
+  background-image: radial-gradient(circle at 2px 2px, rgba(0, 212, 255, 0.06) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+/* ─── Inner glow card effect ─── */
+.inner-glow {
+  transition: box-shadow 0.3s ease-out, border-color 0.3s ease-out;
+}
+.inner-glow:hover {
+  box-shadow: inset 0 0 15px rgba(255,255,255,0.03), 0 0 20px rgba(0, 212, 255, 0.08);
+}
+
+/* ─── Motorcycle overlay ─── */
+.motorcycle-hover:hover .color-overlay {
+  opacity: 1;
+}
+

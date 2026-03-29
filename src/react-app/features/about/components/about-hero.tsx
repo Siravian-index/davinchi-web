@@ -4,43 +4,60 @@ export const AboutHero = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-background relative overflow-hidden">
-      {/* Background glow */}
+    <header className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden bg-background">
+      {/* Particle mesh */}
+      <div className="absolute inset-0 particle-mesh opacity-40 pointer-events-none" />
+
+      {/* Radial glow */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 rounded-full bg-primary opacity-5 blur-3xl" />
+        <div
+          className="absolute inset-0"
+          style={{ background: "radial-gradient(circle at 50% 50%, rgba(0,212,255,0.07) 0%, transparent 65%)" }}
+        />
       </div>
 
-      <div className="relative z-10 max-w-3xl">
-        <p className="text-primary text-sm font-mono tracking-widest uppercase mb-4">
-          davinchi.work
-        </p>
-        <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight mb-6">
-          {t("hero.headline")}
+      {/* Asymmetric decorative blur */}
+      <div className="absolute top-1/4 -right-20 w-96 h-96 bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
+
+      {/* Content */}
+      <div className="container mx-auto px-6 relative z-10 text-center md:text-left flex flex-col items-center md:items-start">
+        {/* Status badge */}
+        <div className="inline-flex items-center gap-3 px-3 py-1 bg-surface-container-highest/40 border border-outline-variant/20 rounded-full mb-8">
+          <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+          <span className="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant">
+            System Status: Optimal
+          </span>
+        </div>
+
+        {/* Headline */}
+        <h1 className="font-headline text-5xl md:text-8xl font-bold text-on-surface leading-[0.9] tracking-tighter max-w-4xl mb-8">
+          {t("hero.headline.line1")}<br />
+          <span className="text-primary italic">{t("hero.headline.line2")}</span>
         </h1>
-        <p className="text-lg text-muted-fg leading-relaxed mb-10 max-w-2xl mx-auto">
+
+        <p className="font-body text-lg text-on-surface-variant max-w-xl mb-12 leading-relaxed">
           {t("hero.subheadline")}
         </p>
-        <div className="flex gap-4 justify-center flex-wrap">
+
+        {/* CTAs */}
+        <div className="flex flex-col sm:flex-row gap-6">
           <a
             href="#projects"
-            className="px-6 py-3 rounded-lg bg-primary text-primary-fg font-semibold hover:opacity-90 transition-opacity"
+            className="bg-primary-container text-on-primary-fixed px-8 py-4 rounded-lg font-label font-bold uppercase tracking-widest text-sm hover:shadow-[0_0_25px_rgba(0,212,255,0.3)] transition-all duration-300 ease-out"
           >
             {t("hero.cta")}
           </a>
           <a
             href="#contact"
-            className="px-6 py-3 rounded-lg border border-border text-foreground hover:bg-secondary transition-colors"
+            className="border border-outline-variant/30 text-on-surface px-8 py-4 rounded-lg font-label font-bold uppercase tracking-widest text-sm hover:bg-white/5 transition-all duration-300 ease-out"
           >
             {t("hero.contact")}
           </a>
         </div>
       </div>
 
-      {/* Scroll hint */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-fg">
-        <span className="text-xs tracking-widest uppercase">scroll</span>
-        <div className="w-px h-8 bg-border" />
-      </div>
-    </section>
+      {/* Vertical accent line */}
+      <div className="absolute left-12 bottom-0 h-32 w-px bg-linear-to-t from-primary to-transparent hidden lg:block" />
+    </header>
   );
 };

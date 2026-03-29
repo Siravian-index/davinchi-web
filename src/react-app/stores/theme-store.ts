@@ -1,18 +1,19 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
-export type ThemeName = "default" | "moto" | "cyber";
+export type ThemeName = "deep-ocean" | "forest-fire" | "sunset";
 
 export interface ThemeOption {
   name: ThemeName;
   label: string;
+  icon: string;   // Material Symbol name
   accent: string; // hex preview color
 }
 
 export const THEMES: ThemeOption[] = [
-  { name: "default", label: "Default", accent: "#6366f1" },
-  { name: "moto",    label: "Moto",    accent: "#d97706" },
-  { name: "cyber",   label: "Cyber",   accent: "#00ff88" },
+  { name: "deep-ocean",   label: "Deep Ocean",   icon: "water_drop",          accent: "#00D4FF" },
+  { name: "forest-fire",  label: "Forest Fire",  icon: "local_fire_department", accent: "#ff6b1a" },
+  { name: "sunset",       label: "Sunset",       icon: "wb_twilight",          accent: "#e040fb" },
 ];
 
 interface ThemeState {
@@ -23,7 +24,7 @@ interface ThemeState {
 export const useThemeStore = create<ThemeState>()(
   persist(
     (set) => ({
-      theme: "default",
+      theme: "deep-ocean",
       setTheme: (theme) => set({ theme }),
     }),
     { name: "davinchi-theme" }

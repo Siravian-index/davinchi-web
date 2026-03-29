@@ -2,8 +2,17 @@
   "common": {
     "name": "David Peña"
   },
+  "nav": {
+    "projects": "Projects",
+    "professional": "Experience",
+    "about": "About",
+    "contact": "Contact"
+  },
   "hero": {
-    "headline": "Building systems, exploring routes.",
+    "headline": {
+      "line1": "Building systems,",
+      "line2": "exploring routes."
+    },
     "subheadline": "Fullstack Developer with nearly 4 years of experience in React and TypeScript, focused on AI, automation, and now diving into Go.",
     "cta": "View projects",
     "contact": "Contact"
