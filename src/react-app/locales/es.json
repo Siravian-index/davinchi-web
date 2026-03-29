@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "professional": "Experiencia",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "headline": {
+      "line1": "Construyendo sistemas,",
+      "line2": "explorando rutas."
+    },
+    "status": "System Status: Optimal",
+    "subheadline": "Desarrollador Fullstack con casi 4 años de experiencia en React y TypeScript, enfocado en IA, automatización y explorando Go.",
+    "availability": "Disponible para proyectos"
+  },
+  "professional": {
+    "title": "Trayectoria Profesional",
+    "subtitle": "Motor Digital",
+    "module": "Módulo",
+    "frontend": {
+      "title": "Frontend Expert",
+      "description": "Especializado en React y TypeScript. Resolución de bugs complejos y optimización de rendimiento mediante peticiones asíncronas en paralelo."
+    },
+    "automation": {
+      "title": "Automatización e IA",
+      "description": "Desarrollo de scripts de automatización e integración de soluciones de IA en flujos de trabajo profesionales."
+    },
+    "learning": {
+      "title": "En Constante Evolución",
+      "description": "Actualmente profundizando en Go (Golang), atraído por su eficiencia y diseño para sistemas de alto rendimiento."
+    },
+    "softSkills": {
+      "title": "Forma de Trabajar"
+    }
+  },
+  "personal": {
+    "title": "Más Allá del Código",
+    "description": "Fuera de las pantallas, mi vida se mueve sobre dos ruedas. A finales de 2024 adquirí una Classic 350 que se convirtió en mi compañera de aventuras.",
+    "stats": {
+      "km": "km recorridos"
+    },
+    "resilience": {
+      "title": "Resiliencia y Resolución"
+    },
+    "mechanical": {
+      "title": "Curiosidad Mecánica"
+    },
+    "human": {
+      "title": "Conexión Humana"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "social": "Social"
+  }
+}

@@ -1,33 +1,31 @@
-# React + Vite + Hono + Cloudflare Workers
+# davinchi.work — Portfolio Personal
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/templates/tree/main/vite-react-template)
+Portafolio personal de **David Peña**, Desarrollador Fullstack con experiencia en React, TypeScript e IA. Construido con un diseño cinematográfico "Digital Blueprint", soporte multilenguaje (ES/EN) y sistema de temas dinámico.
 
-This template provides a minimal setup for building a React application with TypeScript and Vite, designed to run on Cloudflare Workers. It features hot module replacement, ESLint integration, and the flexibility of Workers deployments.
+🌐 **Live:** [davinchi.work](https://davinchi.work)
 
-![React + TypeScript + Vite + Cloudflare Workers](https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/fc7b4b62-442b-4769-641b-ad4422d74300/public)
+---
 
-<!-- dash-content-start -->
+## Stack Técnico
 
-🚀 Supercharge your web development with this powerful stack:
+- [**React**](https://react.dev/) + [**TypeScript**](https://www.typescriptlang.org/) — UI y tipado estricto
+- [**Vite**](https://vite.dev/) — Build tool y servidor de desarrollo
+- [**Tailwind CSS v4**](https://tailwindcss.com/) — Estilos utility-first con sistema de temas via CSS Custom Properties
+- [**Hono**](https://hono.dev/) — Backend ultraligero para API routes
+- [**Cloudflare Workers**](https://developers.cloudflare.com/workers/) — Deploy en el edge, distribución global
+- [**TanStack Query**](https://tanstack.com/query) — Data fetching y estado del servidor
+- [**Zustand**](https://zustand-demo.pmnd.rs/) — Estado global (tema activo)
+- [**i18next**](https://www.i18next.com/) — Internacionalización ES/EN
 
-- [**React**](https://react.dev/) - A modern UI library for building interactive interfaces
-- [**Vite**](https://vite.dev/) - Lightning-fast build tooling and development server
-- [**Hono**](https://hono.dev/) - Ultralight, modern backend framework
-- [**Cloudflare Workers**](https://developers.cloudflare.com/workers/) - Edge computing platform for global deployment
+### ✨ Características
 
-### ✨ Key Features
+- Diseño cinematográfico con 3 temas visuales: Deep Ocean, Forest Fire, Neon Dusk
+- Soporte multilenguaje con detección automática del navegador
+- API routes con Hono para formulario de contacto y status dinámico
+- Deploy automático a Cloudflare's global edge network
+- HMR para desarrollo rápido
+- Observabilidad integrada via Wrangler
 
-- 🔥 Hot Module Replacement (HMR) for rapid development
-- 📦 TypeScript support out of the box
-- 🛠️ ESLint configuration included
-- ⚡ Zero-config deployment to Cloudflare's global network
-- 🎯 API routes with Hono's elegant routing
-- 🔄 Full-stack development setup
-- 🔎 Built-in Observability to monitor your Worker
-
-Get started in minutes with local development or deploy directly via the Cloudflare dashboard. Perfect for building modern, performant web applications at the edge.
-
-<!-- dash-content-end -->
 
 ## Getting Started
 

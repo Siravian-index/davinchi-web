@@ -12,9 +12,18 @@
 		"publish": true
 	},
 	"dependencies": {
+		"@icons-pack/react-simple-icons": "^13.13.0",
+		"@tailwindcss/vite": "^4.2.2",
+		"clsx": "^2.1.1",
 		"hono": "4.11.1",
+		"i18next": "^26.0.1",
+		"i18next-browser-languagedetector": "^8.2.1",
 		"react": "19.2.1",
-		"react-dom": "19.2.1"
+		"react-dom": "19.2.1",
+		"react-i18next": "^17.0.1",
+		"tailwind-merge": "^3.5.0",
+		"tailwindcss": "^4.2.2",
+		"zustand": "^5.0.12"
 	},
 	"devDependencies": {
 		"@cloudflare/vite-plugin": "1.15.3",

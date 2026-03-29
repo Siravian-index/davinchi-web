@@ -1,70 +1,148 @@
+@import "tailwindcss";
+
+/* ─── Map CSS vars → Tailwind tokens ─── */
+@theme inline {
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body:     "Inter", sans-serif;
+  --font-label:    "Space Grotesk", sans-serif;
+
+  --color-background:              var(--background);
+  --color-surface:                 var(--surface);
+  --color-surface-dim:             var(--surface-dim);
+  --color-surface-container-lowest:  var(--surface-container-lowest);
+  --color-surface-container-low:   var(--surface-container-low);
+  --color-surface-container:       var(--surface-container);
+  --color-surface-container-high:  var(--surface-container-high);
+  --color-surface-container-highest: var(--surface-container-highest);
+  --color-surface-bright:          var(--surface-bright);
+  --color-on-surface:              var(--on-surface);
+  --color-on-surface-variant:      var(--on-surface-variant);
+  --color-primary:                 var(--primary);
+  --color-primary-container:       var(--primary-container);
+  --color-on-primary:              var(--on-primary);
+  --color-on-primary-fixed:        var(--on-primary-fixed);
+  --color-secondary:               var(--secondary);
+  --color-secondary-container:     var(--secondary-container);
+  --color-tertiary:                var(--tertiary);
+  --color-outline:                 var(--outline);
+  --color-outline-variant:         var(--outline-variant);
+}
+
+/* ─── Theme: deep-ocean (default) ─── */
+.theme-deep-ocean {
+  --background:                 #050505;
+  --surface:                    #131313;
+  --surface-dim:                #131313;
+  --surface-container-lowest:   #0e0e0e;
+  --surface-container-low:      #1c1b1b;
+  --surface-container:          #201f1f;
+  --surface-container-high:     #2a2a2a;
+  --surface-container-highest:  #353534;
+  --surface-bright:             #3a3939;
+  --on-surface:                 #e5e2e1;
+  --on-surface-variant:         #bac9cc;
+  --primary:                    #00D4FF;
+  --primary-container:          #00D4FF;
+  --on-primary:                 #00363d;
+  --on-primary-fixed:           #001f24;
+  --secondary:                  #2DD4BF;
+  --secondary-container:        #0b5345;
+  --tertiary:                   #ffe8e2;
+  --outline:                    #849396;
+  --outline-variant:            #3b494c;
+}
+
+/* ─── Theme: forest-fire ─── */
+.theme-forest-fire {
+  --background:                 #0a0500;
+  --surface:                    #150c00;
+  --surface-dim:                #110900;
+  --surface-container-lowest:   #0d0600;
+  --surface-container-low:      #1e1200;
+  --surface-container:          #261700;
+  --surface-container-high:     #322000;
+  --surface-container-highest:  #3e2a00;
+  --surface-bright:             #4a3300;
+  --on-surface:                 #f0e0cc;
+  --on-surface-variant:         #d4b896;
+  --primary:                    #ff6b1a;
+  --primary-container:          #ff6b1a;
+  --on-primary:                 #3d1500;
+  --on-primary-fixed:           #260d00;
+  --secondary:                  #ffb74d;
+  --secondary-container:        #5c3200;
+  --tertiary:                   #ffb4ab;
+  --outline:                    #9c7a5a;
+  --outline-variant:            #4c3018;
+}
+
+/* ─── Theme: neon-dusk ─── */
+.theme-neon-dusk {
+  --background:                 #09050a;
+  --surface:                    #130d15;
+  --surface-dim:                #100b11;
+  --surface-container-lowest:   #0e0810;
+  --surface-container-low:      #1c1520;
+  --surface-container:          #221a27;
+  --surface-container-high:     #2e2436;
+  --surface-container-highest:  #3a2e44;
+  --surface-bright:             #453850;
+  --on-surface:                 #ecdff5;
+  --on-surface-variant:         #cbb8d8;
+  --primary:                    #e040fb;
+  --primary-container:          #e040fb;
+  --on-primary:                 #3a0047;
+  --on-primary-fixed:           #25002e;
+  --secondary:                  #f48fb1;
+  --secondary-container:        #6a1e3a;
+  --tertiary:                   #ffcc80;
+  --outline:                    #9a7aaa;
+  --outline-variant:            #4a3258;
+}
+
+/* ─── Base ─── */
 :root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
-	font-weight: 400;
-
-	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
-	background-color: #242424;
-
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-a {
-	font-weight: 500;
-	color: #646cff;
-	text-decoration: inherit;
-}
-a:hover {
-	color: #535bf2;
+  font-family: "Inter", system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-	margin: 0;
-	min-width: 320px;
-	min-height: 100vh;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
 #root {
-	width: 100%;
+  width: 100%;
 }
 
-h1 {
-	font-size: 3.2em;
-	line-height: 1.1;
+/* ─── Material Symbols utility ─── */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.material-symbols-filled {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
-button {
-	border-radius: 8px;
-	border: 1px solid transparent;
-	padding: 0.6em 1.2em;
-	font-size: 1em;
-	font-weight: 500;
-	font-family: inherit;
-	background-color: #1a1a1a;
-	cursor: pointer;
-	transition: border-color 0.25s;
-}
-button:hover {
-	border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-	outline: 4px auto -webkit-focus-ring-color;
+/* ─── Particle mesh background ─── */
+.particle-mesh {
+  background-image: radial-gradient(circle at 2px 2px, color-mix(in srgb, var(--primary) 8%, transparent) 1px, transparent 0);
+  background-size: 40px 40px;
 }
 
-@media (prefers-color-scheme: light) {
-	:root {
-		color: #213547;
-		background-color: #ffffff;
-	}
-	a:hover {
-		color: #747bff;
-	}
-	button {
-		background-color: #f9f9f9;
-	}
+/* ─── Inner glow card effect ─── */
+.inner-glow {
+  transition: box-shadow 0.3s ease-out, border-color 0.3s ease-out;
 }
+.inner-glow:hover {
+  box-shadow: inset 0 0 15px rgba(255,255,255,0.03), 0 0 20px color-mix(in srgb, var(--primary) 10%, transparent);
+}
+
+/* ─── Motorcycle overlay ─── */
+.motorcycle-hover:hover .color-overlay {
+  opacity: 1;
+}
+

@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "professional": "Experience",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": {
+      "line1": "Building systems,",
+      "line2": "exploring routes."
+    },
+    "status": "System Status: Optimal",
+    "subheadline": "Fullstack Developer with nearly 4 years of experience in React and TypeScript, focused on AI, automation, and now diving into Go.",
+    "availability": "Available for projects"
+  },
+  "professional": {
+    "title": "Professional Journey",
+    "subtitle": "The Digital Engine",
+    "module": "Module",
+    "frontend": {
+      "title": "Frontend Expert",
+      "description": "Specialized in React and TypeScript. Complex bug resolution and performance optimization through parallel async requests."
+    },
+    "automation": {
+      "title": "Automation & AI",
+      "description": "Building automation scripts and integrating AI solutions into professional workflows."
+    },
+    "learning": {
+      "title": "Constantly Evolving",
+      "description": "Currently deep-diving into Go (Golang), drawn to its efficiency and design for high-performance systems."
+    },
+    "softSkills": {
+      "title": "How I Work"
+    }
+  },
+  "personal": {
+    "title": "Beyond the Code",
+    "description": "Away from screens, my life runs on two wheels. At the end of 2024 I got a Classic 350 that became my adventure companion.",
+    "stats": {
+      "km": "km traveled"
+    },
+    "resilience": {
+      "title": "Resilience & Problem Solving"
+    },
+    "mechanical": {
+      "title": "Mechanical Curiosity"
+    },
+    "human": {
+      "title": "Human Connection"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "social": "Social"
+  }
+}
