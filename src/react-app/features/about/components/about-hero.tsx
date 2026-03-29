@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { TechStack } from "@/components/ui/tech-stack";
 
 export const AboutHero = () => {
   const { t } = useTranslation();
@@ -39,20 +40,15 @@ export const AboutHero = () => {
           {t("hero.subheadline")}
         </p>
 
-        {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-6">
-          <a
-            href="#projects"
-            className="bg-primary-container text-on-primary-fixed px-8 py-4 rounded-lg font-label font-bold uppercase tracking-widest text-sm hover:shadow-[0_0_25px_rgba(0,212,255,0.3)] transition-all duration-300 ease-out"
-          >
-            {t("hero.cta")}
-          </a>
-          <a
-            href="#contact"
-            className="border border-outline-variant/30 text-on-surface px-8 py-4 rounded-lg font-label font-bold uppercase tracking-widest text-sm hover:bg-white/5 transition-all duration-300 ease-out"
-          >
-            {t("hero.contact")}
-          </a>
+        {/* Availability badge + Tech stack */}
+        <div className="flex flex-col gap-4">
+          <div className="inline-flex items-center gap-2 self-start px-3 py-1.5 bg-surface-container-highest/40 border border-outline-variant/20 rounded-full">
+            <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse" />
+            <span className="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant">
+              {t("hero.availability")}
+            </span>
+          </div>
+          <TechStack showIcons showLabels />
         </div>
       </div>
 

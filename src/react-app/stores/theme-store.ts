@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
-export type ThemeName = "deep-ocean" | "forest-fire" | "sunset";
+export type ThemeName = "deep-ocean" | "forest-fire" | "neon-dusk";
 
 export interface ThemeOption {
   name: ThemeName;
@@ -13,7 +13,7 @@ export interface ThemeOption {
 export const THEMES: ThemeOption[] = [
   { name: "deep-ocean",   label: "Deep Ocean",   icon: "water_drop",          accent: "#00D4FF" },
   { name: "forest-fire",  label: "Forest Fire",  icon: "local_fire_department", accent: "#ff6b1a" },
-  { name: "sunset",       label: "Sunset",       icon: "wb_twilight",          accent: "#e040fb" },
+  { name: "neon-dusk",     label: "Neon Dusk",    icon: "wb_twilight",          accent: "#e040fb" },
 ];
 
 interface ThemeState {
