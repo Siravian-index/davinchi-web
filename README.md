@@ -26,8 +26,6 @@ Portafolio personal de **David Peña**, Desarrollador Fullstack con experiencia 
 - HMR para desarrollo rápido
 - Observabilidad integrada via Wrangler
 
-<!-- dash-content-start -->
-<!-- dash-content-end -->
 
 ## Getting Started
 
