@@ -1,11 +1,15 @@
 import { THEMES, useThemeStore } from "@/stores/theme-store";
 import { cn } from "@/lib/utils";
 
-export const ThemeSwitcher = () => {
+interface ThemeSwitcherProps {
+  className?: string;
+}
+
+export const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
   const { theme, setTheme } = useThemeStore();
 
   return (
-    <nav className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 flex gap-6 items-center bg-surface-container-lowest/60 backdrop-blur-xl border border-white/10 shadow-2xl rounded-full px-6 py-3 w-max">
+    <nav className={cn("flex gap-6 items-center bg-surface-container-lowest/60 backdrop-blur-xl border border-white/10 shadow-2xl rounded-full px-6 py-3 w-max", className)}>
       {THEMES.map((t) => (
         <button
           key={t.name}
